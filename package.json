@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fastapi": "^0.0.8",
+    "websocket": "^1.0.34",
+    "websockets": "^0.2.0"
+  }
+}

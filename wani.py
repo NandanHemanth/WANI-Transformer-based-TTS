@@ -37,3 +37,8 @@ for i, audio_array in enumerate(audio_segments):
     output_file_path = f"output_audio_{i}.wav"
     wavfile.write(output_file_path, SAMPLE_RATE, audio_array)
     print(f"Audio segment {i+1} saved successfully as {output_file_path}.")
+
+    # Play the audio segment
+    display(Audio(output_file_path))
+
+print("All audio segments played successfully.")

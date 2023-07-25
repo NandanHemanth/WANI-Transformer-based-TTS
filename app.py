@@ -15,6 +15,6 @@ async def websocket_endpoint(websocket: WebSocket):
 
         # Send the audio data back to the client
         await websocket.send_bytes(audio_data)
-        
+
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="127.0.0.0", port=8000)

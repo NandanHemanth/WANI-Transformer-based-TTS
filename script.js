@@ -4,7 +4,7 @@ function generateAudio() {
 
     // Send the inputText to the server using socket programming
     // Replace the following code with your socket implementation
-    const socket = new WebSocket('ws://your-server-url/socket');
+    const socket = new WebSocket('ws://127.0.0.1:8000/ws');
 
     socket.onopen = function (event) {
         socket.send(JSON.stringify({ text: inputText }));
